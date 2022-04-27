@@ -7,5 +7,5 @@ Dependencies
 5. go get golang.org/x/crypto/bcrypt
 
 #To set the git config for counts
-git config user.email "karthik.akinapelli@gmail.com"
+git config user.email ""
 git config --get user.name
