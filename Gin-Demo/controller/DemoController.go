@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"GIN-DEMO/service"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -10,9 +11,9 @@ import (
 func HelloWorld(ctx *gin.Context) {
 
 
-	//msg := service.DemoServiceImpl{}.HelloService(ctx.Query("name"))
+	msg := service.DemoService.HelloService(ctx.Param("cust"))
 
 	ctx.JSON(http.StatusOK, gin.H{
-		"message": "test",
+		"message": msg,
 	})
 }

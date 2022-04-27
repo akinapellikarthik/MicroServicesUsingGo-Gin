@@ -10,17 +10,11 @@ type IDemoService interface {
 //Step 2: Implement the interface
 type demoServiceImpl struct {}
 
-//type demoService struct {}
-
-type demoService struct {
-
-}
-
 var (
-	//DemoService DemoService = demoServiceImpl{}
+	DemoService IDemoService = &demoServiceImpl{}
 )
 
-func (service demoServiceImpl)HelloService(custName string) string {
+func (service *demoServiceImpl)HelloService(custName string) string {
 	fmt.Println("Inside the service function....")
 	return fmt.Sprintf("%s %s", "Hello Customer", custName)
 }
