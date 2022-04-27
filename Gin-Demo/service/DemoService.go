@@ -17,7 +17,7 @@ type demoService struct {
 }
 
 var (
-	DemoService DemoService = demoServiceImpl{}
+	//DemoService DemoService = demoServiceImpl{}
 )
 
 func (service demoServiceImpl)HelloService(custName string) string {

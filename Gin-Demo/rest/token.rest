@@ -1,0 +1,9 @@
+@host = localhost:8989
+
+POST http://{{host}}/api/token HTTP/1.1
+content-type: application/json
+
+{
+    "email": "karthikakinapelli@google.com",
+    "password": "123465789"
+}
