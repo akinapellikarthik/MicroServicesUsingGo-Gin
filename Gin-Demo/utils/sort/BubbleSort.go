@@ -8,6 +8,7 @@ import (
 func BubbleSortAscendingOrder(elements []int) []int {
 	keepWorking := true
 	for keepWorking {
+		//when this line will be commented channels will work and test case will fail
 		keepWorking = false
 		for i := 0; i < len(elements)-1; i++ {
 			if elements[i] > elements[i+1] {
